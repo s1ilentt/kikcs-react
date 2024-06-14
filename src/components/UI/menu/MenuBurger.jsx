@@ -37,7 +37,7 @@ const MenuBurger = observer(({ isAnimActive, isButtonClick, hideFunction }) => {
 		function clickOutsideMenuBody(event) {
 			if (!isAnimActive) {
 				if (menuPage.classList.contains(styles.menuActive)) {
-					if (!event.target.closest(`.${styles.menuBody}`)) {
+					if (!event.target.closest(`[class^="${styles.menuBody}"]`)) {
 						hideFunction();
 					}
 				}
