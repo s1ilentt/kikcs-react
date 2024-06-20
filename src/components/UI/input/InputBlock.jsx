@@ -175,7 +175,7 @@ const InputBlock = observer(({ onHide, ...attrs }) => {
 								<div className={styles.itemWrapper}>
 									<div className={styles.imageWrapper}>
 										<Image
-											src={process.env.REACT_APP_API_URL + product.img}
+											src={product.img}
 											alt='Image' background={true}
 										/>
 									</div>

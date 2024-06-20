@@ -21,7 +21,7 @@ const AdminProductItem = observer(({ product, allProducts }) => {
 			<div className={styles.prodcutInfo}>
 				<div className={styles.productImageWrapper}>
 					<Image
-						src={process.env.REACT_APP_API_URL + product.img}
+						src={product.img}
 						alt='product image'
 					/>
 				</div>

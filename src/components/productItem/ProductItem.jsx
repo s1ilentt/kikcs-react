@@ -25,7 +25,7 @@ const ProductItem = ({ product, labelInfo }) => {
 				>
 					<Image
 						background={true}
-						src={process.env.REACT_APP_API_URL + product.img}
+						src={product.img}
 					/>
 					<div
 						className={`${styles.label} ${labelInfo.backgroundYellow ? styles.labelYellow : ''}`}

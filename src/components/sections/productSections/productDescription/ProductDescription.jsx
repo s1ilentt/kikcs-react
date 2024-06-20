@@ -37,7 +37,7 @@ const ProductDescription = () => {
 
 	// Define special product IDs for different image sets
 	const specialImageIds = [1, 12, 24, 32];
-	const imagesUrl = process.env.REACT_APP_API_URL + product.img;
+	const imagesUrl = product.img;
 	// Determine image array based on specialImageIds
 	const arrayImages = specialImageIds.includes(product.id)
 		? [imagesUrl, ProductImage_2, ProductImage_3, ProductImage_4]

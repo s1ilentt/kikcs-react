@@ -74,7 +74,7 @@ const ProductInfo = observer(() => {
 					setColor(data.color);
 					setSizes(data.size.join(','));
 					setGender(data.gender);
-					setImgUrl([process.env.REACT_APP_API_URL + data.img]);
+					setImgUrl([data.img]);
 					// We are looking for the fields we need in an array info
 					if (data.info) {
 						setDescription(data.info.find(item => item.title === 'description').description);
@@ -113,7 +113,7 @@ const ProductInfo = observer(() => {
 				setSizes(product.size.join(','));
 				setGender(product.gender);
 				setSelectedFile(null);
-				setImgUrl([process.env.REACT_APP_API_URL + product.img]);
+				setImgUrl([product.img]);
 				// We are looking for the fields we need in an array info
 				if (product.info) {
 					setDescription(product.info.find(item => item.title === 'description').description);

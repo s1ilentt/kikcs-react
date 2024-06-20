@@ -136,7 +136,7 @@ const SearchPage = observer(({ limitProductInPage, isAnimActive, isButtonClick, 
 									<div className={styles.itemWrapper}>
 										<div className={styles.imageWrapper}>
 											<Image
-												src={process.env.REACT_APP_API_URL + product.img}
+												src={product.img}
 												alt='Image'
 												background={true}
 											/>
