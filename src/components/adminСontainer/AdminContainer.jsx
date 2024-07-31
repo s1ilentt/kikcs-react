@@ -6,7 +6,7 @@ const AdminContainer = ({ className = '', children }) => {
 		<div
 			className={`${styles.adminContainer} ${className}`}
 		>
-			{ children }
+			{children}
 		</div>
 	);
 }
