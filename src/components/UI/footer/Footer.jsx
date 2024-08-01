@@ -125,12 +125,12 @@ const Footer = observer(() => {
 					<div className={styles.columnCategories}>
 						<h5 className={styles.columnHeader}>Categories</h5>
 						<ul className={styles.columnList}>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(2)}>Runners</span></li>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(4)}>Sneakers</span></li>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(5)}>Basketball</span></li>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(7)}>Outdoor</span></li>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(6)}>Golf</span></li>
-							<li className={styles.columnListItem}><span onClick={() => handleLinkType(3)}>Hiking</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(35)}>Runners</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(37)}>Sneakers</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(38)}>Basketball</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(40)}>Outdoor</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(39)}>Golf</span></li>
+							<li className={styles.columnListItem}><span onClick={() => handleLinkType(36)}>Hiking</span></li>
 						</ul>
 					</div>
 					<div className={styles.columnCompany}>
