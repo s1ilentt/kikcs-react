@@ -35,7 +35,7 @@ const ProductInfo = observer(() => {
 	// State variables for product fields
 	const [productName, setProductName] = useState('');
 	const [description, setDescription] = useState('');
-	const [typeId, setTypeId] = useState(1);
+	const [typeId, setTypeId] = useState(2);
 	const [brandId, setBrandId] = useState(1);
 	const [price, setPrice] = useState(0);
 	const [color, setColor] = useState('cornflowerblue');
@@ -68,7 +68,7 @@ const ProductInfo = observer(() => {
 				setProduct(data);
 				if (data) {
 					setProductName(data.name);
-					setTypeId(data.typeId ? data.typeId : 1);
+					setTypeId(data.typeId ? data.typeId : 2);
 					setBrandId(data.brandId ? data.brandId : 1);
 					setPrice(data.price);
 					setColor(data.color);
@@ -106,7 +106,7 @@ const ProductInfo = observer(() => {
 		if (product) {
 			if (!isAddProductPage) {
 				setProductName(product.name);
-				setTypeId(product.typeId ? product.typeId : 1);
+				setTypeId(product.typeId ? product.typeId : 2);
 				setBrandId(product.brandId ? product.brandId : 1);
 				setPrice(product.price);
 				setColor(product.color);
@@ -123,7 +123,7 @@ const ProductInfo = observer(() => {
 			} else if (isAddProductPage) {
 				// Clear form fields to the base values
 				setProductName('');
-				setTypeId(1);
+				setTypeId(2);
 				setBrandId(1);
 				setPrice(0);
 				setColor('cornflowerblue');
